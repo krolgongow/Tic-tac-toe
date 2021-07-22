@@ -15,25 +15,8 @@ let player2Choices = [];
 
 //Checking which field was choosen
 const checkingPlayerFields = function (e, playerChoices) {
-  if (e.target.classList.contains("1")) {
-    playerChoices.push(1);
-  } else if (e.target.classList.contains("2")) {
-    playerChoices.push(2);
-  } else if (e.target.classList.contains("3")) {
-    playerChoices.push(3);
-  } else if (e.target.classList.contains("4")) {
-    playerChoices.push(4);
-  } else if (e.target.classList.contains("5")) {
-    playerChoices.push(5);
-  } else if (e.target.classList.contains("6")) {
-    playerChoices.push(6);
-  } else if (e.target.classList.contains("7")) {
-    playerChoices.push(7);
-  } else if (e.target.classList.contains("8")) {
-    playerChoices.push(8);
-  } else if (e.target.classList.contains("9")) {
-    playerChoices.push(9);
-  }
+  const key = Number(e.target.dataset.key);
+  playerChoices.push(key);
 };
 
 //Selecting field
