@@ -75,7 +75,6 @@ const initialization = function () {
 };
 
 const reset = function () {
-  // window.location.reload(true);
   activePlayer = 0;
   player1Choices = [];
   player2Choices = [];
